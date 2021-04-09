@@ -1,0 +1,110 @@
+@font-face{
+    font-family: "futura";
+    src: url("FuturaBookfont.ttf") format("truetype");
+}
+
+#testing, body, html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "futura";
+}
+#viewDiv{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "futura";
+}
+#helpInfo{
+    position: absolute;
+    z-index: 1;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #b4b4b4;
+    width: 350px;
+    text-align: center;
+    padding: 10px;
+    font-family: "futura";
+}
+.card-title{
+    margin-top: .75rem;
+    font-size: 20px;
+}
+#layerChoice{
+    margin-top: 10px;
+}
+.borderArea{
+    border: .2rem solid #b4b4b4;
+    margin: 5px;
+    padding: 10px;
+}
+.selectpicker{
+    background-color: #6c757d;
+    color: #ffffff;
+}
+.selectpicker:hover {
+    background-color: #b4b4b4;
+    color: #000000;
+}
+#tractsStyle:hover, #tazStyle:hover, #gridStyle:hover{
+    background-color: #b4b4b4;
+    color: #000000;
+}
+.esri-legend__service{
+    font-family: "futura";
+}
+
+@media screen and (max-width: 415px){
+    #testing{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #viewDiv{
+        order: 0;
+    }
+    #helpInfo{
+        order: 2;
+        font-family: "futura";
+        margin: auto;
+        width: 100%;
+        padding: unset;
+        height: 30vh;
+    }
+    img, h4, br{
+        display: none;
+    }
+    .borderArea{
+        border: unset;
+        padding: unset;
+        margin: unset;
+    }
+    .card-body{
+        padding: 1rem !important;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px){
+    #testing{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #viewDiv{
+        order: 0;
+    }
+    #helpInfo{
+        order: 2;
+        font-family: "futura";
+        margin: auto;
+        width: 100%;
+        padding: unset;
+    }
+    img, h4{
+        display: none;
+    }
+}
